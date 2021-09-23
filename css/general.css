@@ -1,0 +1,18 @@
+/*@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  /* font-family: "IBM Plex Sans Arabic", sans-serif;
+   font-family: "New Tegomin", serif; */
+  font-family: "Nova Cut", cursive;
+  color: #f2f3f7;
+}
+
+body {
+  background: #111827;
+  min-height: 100vh;
+}
