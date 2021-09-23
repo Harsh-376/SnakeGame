@@ -1,12 +1,12 @@
 // Variables and constant
 
 let inputDir = { x: 0, y: 0 };
-const foodSound = new Audio('../music/food.mp3');
+/*const foodSound = new Audio('../music/food.mp3');
 const gameOver = new Audio('../music/gameover.mp3');
 const moveSound = new Audio('../music/8-bit-pop-sound-effect.mp3');
 moveSound.volume = 0.4;
 const music = new Audio('../music/8-Bit-Adventure.mp3');
-music.loop = true;
+music.loop = true;*/
 let frameSpeed = 8;
 let score = 0;
 let lastPaintTime = 0;
@@ -44,8 +44,8 @@ function gameEngine() {
 
     // If snake collides with itself or wall
     if (isCollide(snake)) {
-        gameOver.play();
-        music.load();
+        //gameOver.play();
+        //music.load();
         inputDir = { x: 0, y: 0 };
         alert("Game Over!");
         snake = [{ x: 9, y: 13 }];
@@ -55,7 +55,7 @@ function gameEngine() {
 
     // If food eaten increase score and regenerate food
     if (snake[0].x === food.x && snake[0].y === food.y) {
-        foodSound.play();
+        //foodSound.play();
         score += 1;
         scorediv.innerHTML = "Score: " + score;
 
@@ -126,8 +126,8 @@ if (hiscore === null) {
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', (e) => {
     //inputDir = { x: 0, y: 1 };  Game Start
-    moveSound.play();
-    music.play();
+   // moveSound.play();
+   // music.play();
     snakeDirElement.className = "";
     switch (e.key) {
         case "W":
@@ -170,9 +170,9 @@ window.addEventListener('keydown', (e) => {
         case "P":
         case "p":
             // p pressed GAME PAUSE
-            music.pause();
+            //music.pause();
             alert("Game Paused!, Press OK to continue");
-            music.play();
+            //music.play();
             break;
     }
 });
